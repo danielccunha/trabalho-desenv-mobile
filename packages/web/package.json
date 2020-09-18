@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@trabalho-desenv-mobile/web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
