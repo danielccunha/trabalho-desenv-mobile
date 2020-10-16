@@ -2,7 +2,8 @@ const Atividade = require("../models/Atividade");
 
 exports.index = async (_request, response) => {
   const atividades = await Atividade.find()
-    .populate("projetos")
+    .populate("projeto")
+    .populate("usuario")
     .sort({ nome: 1 });
 
   return response.json(atividades);
