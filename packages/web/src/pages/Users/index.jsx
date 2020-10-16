@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 
-import UsuarioList from "./List";
-import UsuarioForm from "./Form";
+import List from "./List";
+import Form from "./Form";
 import * as UsuarioService from "../../services/UsuariosService";
 
 const Users = () => {
@@ -77,7 +77,7 @@ const Users = () => {
   function TelaAtiva(props) {
     if (editando) {
       return (
-        <UsuarioForm
+        <Form
           usuario={usuario}
           inserirUsuario={inserirUsuario}
           alterarUsuario={alterarUsuario}
@@ -86,7 +86,7 @@ const Users = () => {
       );
     }
     return (
-      <UsuarioList
+      <List
         usuarios={usuarios}
         excluirUsuario={excluirUsuario}
         editarUsuario={editarUsuario}

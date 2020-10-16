@@ -1,7 +1,11 @@
 import React from "react";
 
 function List() {
-  return <div />;
+  return (
+    <>
+      <button className="button muted-button">Novo</button>
+    </>
+  );
 }
 
 export default List;
